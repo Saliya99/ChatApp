@@ -32,6 +32,7 @@ import java.util.logging.Logger;
 import javax.imageio.ImageIO;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
+import javax.swing.JFrame;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JScrollBar;
@@ -1196,6 +1197,18 @@ public class Login extends javax.swing.JFrame {
         label3.setText("Create New Channel");
         group_create_panel.add(label3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 50, -1, -1));
 
+        layered_pane.setLayer(title_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(signin_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(signup_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(forgot_password_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(chat_body_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(chat_list_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(setting_panel, javax.swing.JLayeredPane.PALETTE_LAYER);
+        layered_pane.setLayer(update_pwd_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(update_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(admin_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        layered_pane.setLayer(group_create_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout layered_paneLayout = new javax.swing.GroupLayout(layered_pane);
         layered_pane.setLayout(layered_paneLayout);
         layered_paneLayout.setHorizontalGroup(
@@ -1283,17 +1296,6 @@ public class Login extends javax.swing.JFrame {
                     .addGap(0, 37, Short.MAX_VALUE)
                     .addComponent(chat_body_panel, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
-        layered_pane.setLayer(title_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(signin_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(signup_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(forgot_password_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(chat_body_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(chat_list_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(setting_panel, javax.swing.JLayeredPane.PALETTE_LAYER);
-        layered_pane.setLayer(update_pwd_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(update_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(admin_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        layered_pane.setLayer(group_create_panel, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         getContentPane().add(layered_pane, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 800, 550));
 
@@ -1807,7 +1809,7 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_back1MouseClicked
 
     private void minimize1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_minimize1MouseClicked
-        
+        this.setState(JFrame.ICONIFIED);
         
     }//GEN-LAST:event_minimize1MouseClicked
 
